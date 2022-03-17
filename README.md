@@ -52,6 +52,18 @@ Lot 3
 
 ## Study Design: MechaCar vs Competition
 
-To compare the MechaCar performs against the competition we will perform a statistical analysis based on cost, fuel efficiency, horse power, maintenance cost, safety rating. 
-The null hypothesis would be  performance metrics is statistically similar between the MechaCar  and competitors vehicle.
-To perform the test, we would need data of MechaCar vehicles and its competition.
+
+To compare the performance of the MechaCar prototype against the vehicles from the competition, we will perform a statistical analysis based on the following metrics:
+
+the "0 to 60 mph" time,
+the braking distance,
+the fuel economy (mpg),
+the Power,
+the safety rating.
+In our case the null hypothesis would be: each performance metrics is statistically similar between the MechaCar prototype and all vehicle from the other manufacturers.
+
+We would use a one-way ANOVA test. This test is used to compare the means of a continuous numerical variable across a number of groups.
+So in this analysis we would compare the means for each metric across the different manufacturers.
+
+To perform the test, we would need data of MechaCar vehicles and its competition, all gathered in a single dataframe where each metric is a column.
+The data could be scraped from vehicle data APIs such as scrapinghub.com/data-api-vehicle or carqueryapi.com.
